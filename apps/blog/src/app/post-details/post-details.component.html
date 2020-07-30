@@ -1,0 +1,15 @@
+<div class="post-details" *ngIf="post$ | async as post">
+    <div class="post">
+        <div class="post-header">
+            <div class="header--image">
+                <img src="  {{ post.fields.foto.fields.file.url }}" />
+            </div>
+            <div class="header--title">
+                {{ post.fields.titulo }}
+            </div>
+        </div>
+        <div class="post-body">
+            {{ post.fields.letra }}
+        </div>
+    </div>
+</div>
