@@ -28,6 +28,9 @@
     "blog-e2e": {
       "tags": [],
       "implicitDependencies": ["blog"]
+    },
+    "post": {
+      "tags": []
     }
   }
 }
