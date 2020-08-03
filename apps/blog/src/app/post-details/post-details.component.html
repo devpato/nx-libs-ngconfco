@@ -2,14 +2,14 @@
     <div class="post">
         <div class="post-header">
             <div class="header--image">
-                <img src="  {{ post.fields.foto.fields.file.url }}" />
+                <img src="{{post.imageUrl}}" />
             </div>
             <div class="header--title">
-                {{ post.fields.titulo }}
+                {{ post.title }}
             </div>
         </div>
         <div class="post-body">
-            {{ post.fields.letra }}
+            {{ post.description }}
         </div>
     </div>
 </div>

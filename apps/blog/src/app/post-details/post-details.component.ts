@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 import { ActivatedRoute } from '@angular/router';
-import { ContentfulService } from '../contentful.service';
 import { Entry } from 'contentful';
 import { Observable } from 'rxjs';
+import { BlogService } from '../blog.service';
 
 @Component({
   selector: 'ngconf-post-details',
@@ -12,13 +12,13 @@ import { Observable } from 'rxjs';
 })
 export class PostDetailsComponent implements OnInit {
   id: string;
-  post$: Observable<Entry<any>>;
+  post$: Observable<any>;
 
-  constructor(private contentfulService: ContentfulService, private route: ActivatedRoute) { }
+  constructor(private blogService: BlogService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.id = this.route.snapshot.paramMap.get('id');
-    this.post$ = this.contentfulService.getPost(this.id);
+    this.post$ = this.blogService.getPost(this.id);
   }
 
 }

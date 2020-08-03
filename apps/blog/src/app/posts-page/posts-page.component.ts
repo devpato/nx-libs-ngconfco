@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { ContentfulService } from '../contentful.service';
+import { BlogService } from '../blog.service';
 import { Entry } from 'contentful';
 import { Observable } from 'rxjs';
 
@@ -10,11 +10,11 @@ import { Observable } from 'rxjs';
   styleUrls: ['./posts-page.component.scss']
 })
 export class PostsPageComponent implements OnInit {
-  posts$: Observable<Entry<any>[]>
-  constructor(private contentfulService: ContentfulService) { }
+  posts$: Observable<any>
+  constructor(private blogService: BlogService) { }
 
   ngOnInit(): void {
-    this.posts$ = this.contentfulService.getPosts();
+    this.posts$ = this.blogService.posts$;
   }
 
 }
