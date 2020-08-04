@@ -4,7 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Entry } from 'contentful';
 import { Observable } from 'rxjs';
 import { BlogService } from '../blog.service';
-
+import { Post } from '../post.interface';
 @Component({
   selector: 'ngconf-post-details',
   templateUrl: './post-details.component.html',
@@ -12,7 +12,7 @@ import { BlogService } from '../blog.service';
 })
 export class PostDetailsComponent implements OnInit {
   id: string;
-  post$: Observable<any>;
+  post$: Observable<Post>;
 
   constructor(private blogService: BlogService, private route: ActivatedRoute) { }
 
