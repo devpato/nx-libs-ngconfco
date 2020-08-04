@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Post } from '../post.interface';
+import { Post } from '@ngconf/post';
 import { BlogService } from '../blog.service';
 import { Observable } from 'rxjs';
 

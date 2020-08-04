@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Post } from './post.interface';
+import { Post } from '@ngconf/post';
 import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
