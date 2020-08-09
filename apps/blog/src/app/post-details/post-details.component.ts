@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
 import { ActivatedRoute } from '@angular/router';
-import { Entry } from 'contentful';
 import { Observable } from 'rxjs';
-import { BlogService } from '../blog.service';
+import { BlogService } from '@ngconf/ui';
 import { Post } from '@ngconf/post';
 @Component({
   selector: 'ngconf-post-details',
