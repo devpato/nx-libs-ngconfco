@@ -16,7 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@ngconf/post": ["libs/post/src/index.ts"]
+      "@ngconf/post": ["libs/post/src/index.ts"],
+      "@ngconf/ui": ["libs/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
