@@ -1,0 +1,12 @@
+<div class="posts">
+    <a [routerLink]="['/posts/', i]" *ngFor="let p of posts; let i = index">
+        <div class="post">
+            <div class="post-image">
+                <img src="{{p.imageUrl}}" />
+            </div>
+            <div class="post-title">
+                {{ p.title }}
+            </div>
+        </div>
+    </a>
+</div>

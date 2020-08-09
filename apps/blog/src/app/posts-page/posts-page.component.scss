@@ -5,40 +5,4 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    .posts {
-        a {
-            font-size: 24px;
-            text-decoration: none;
-            font-weight: 800;
-            color: black;
-            &:visited {
-                text-decoration: none;
-            }
-            &:hover {
-                text-decoration: none;
-            }
-            &:focus {
-                text-decoration: none;
-            }
-            &:hover,
-            &:active {
-                text-decoration: none;
-            }
-        }
-        .post {
-            border-radius: 5px;
-            display: flex;
-            width: 500px;
-            margin: 4px;
-            align-items: center;
-            padding: 8px;
-            -webkit-box-shadow: 10px 7px 7px -1px rgba(0, 0, 0, 0.21);
-            -moz-box-shadow: 10px 7px 7px -1px rgba(0, 0, 0, 0.21);
-            box-shadow: 10px 7px 7px -1px rgba(0, 0, 0, 0.21);
-            &-image img {
-                height: 200px;
-                width: 400px;
-            }
-        }
-    }
   }
