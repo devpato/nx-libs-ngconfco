@@ -1,7 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core'
 import { ActivatedRoute } from '@angular/router';
-import { Entry } from 'contentful';
 import { Observable } from 'rxjs';
 import { BlogService } from '../blog.service';
 import { Post } from '../post.interface';
